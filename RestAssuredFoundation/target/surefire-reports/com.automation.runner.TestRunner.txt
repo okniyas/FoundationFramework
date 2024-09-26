@@ -1,0 +1,67 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 12.07 s <<< FAILURE! -- in com.automation.runner.TestRunner
+Validate delete request.Verify user can delete the employee by id -- Time elapsed: 1.371 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/delete_employee.feature:8)
+
+Validate delete request.Verify user can delete the employee -- Time elapsed: 1.225 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/delete_employee.feature:19)
+
+Validate the get request.Verify user can get the list of employees -- Time elapsed: 1.338 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/get_employee.feature:6)
+
+Validate the get request.Verify user can get the employee by id -- Time elapsed: 1.148 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/get_employee.feature:13)
+
+Validate the get request.Verify user can get the employee -- Time elapsed: 1.282 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/get_employee.feature:24)
+
+Validate the put request.Verify user can update the employee by id -- Time elapsed: 1.188 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/update_employee.feature:8)
+
+Validate the put request.Verify user can update employee -- Time elapsed: 1.595 s <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<429>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.automation.steps.ResponseSteps.verify_status_code_is(ResponseSteps.java:13)
+	at ✽.verify status code is 200(file:///C:/UST_Java/RestAssuredFoundation/src/test/resources/features/update_employee.feature:23)
+

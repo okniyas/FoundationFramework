@@ -1,0 +1,213 @@
+{
+	"id": "38ffcfec-9ef4-4db8-ba43-890e47137487",
+	"name": "RestAPIFoundation",
+	"timestamp": "2024-08-05T11:38:43.232Z",
+	"collection_id": "37243978-e6bea055-e537-4b33-a670-e8f9d71b333c",
+	"folder_id": 0,
+	"environment_id": "37243978-9fb306f8-9804-4471-985a-5e108d8a3171",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-05T11:38:39.479Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "d1c23961-0ef6-4853-94ed-bcb9c0b71bf2",
+			"name": "CreateEmployee",
+			"url": "https://dummy.restapiexample.com/api/v1/create",
+			"time": 1162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": true,
+				"Save Employee ID": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save Employee ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1162
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": true,
+					"Save Employee ID": true
+				}
+			]
+		},
+		{
+			"id": "2aa47fc6-7c19-459c-aa66-ad0cc89a759b",
+			"name": "GetEmployeeById",
+			"url": "https://dummy.restapiexample.com/api/v1/employee/1783",
+			"time": 479,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				479
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "52af6794-a374-49bb-885e-b49db1238a91",
+			"name": "GetListOfEmployees",
+			"url": "https://dummy.restapiexample.com/api/v1/employees",
+			"time": 455,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				455
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "b829fb75-502b-45cd-9345-e482ea31f655",
+			"name": "UpdateEmployee",
+			"url": "https://dummy.restapiexample.com/api/v1/update/1783",
+			"time": 422,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				422
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "c109005e-a48b-4895-bd4c-fd29a2b5eecd",
+			"name": "DeleteEmployee",
+			"url": "https://dummy.restapiexample.com/api/v1/delete/1783",
+			"time": 381,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Response time is less than 1500ms": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 1500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				381
+			],
+			"allTests": [
+				{
+					"Response time is less than 1500ms": true,
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2899,
+	"collection": {
+		"requests": [
+			{
+				"id": "d1c23961-0ef6-4853-94ed-bcb9c0b71bf2",
+				"method": "POST"
+			},
+			{
+				"id": "2aa47fc6-7c19-459c-aa66-ad0cc89a759b",
+				"method": "GET"
+			},
+			{
+				"id": "52af6794-a374-49bb-885e-b49db1238a91",
+				"method": "GET"
+			},
+			{
+				"id": "b829fb75-502b-45cd-9345-e482ea31f655",
+				"method": "PUT"
+			},
+			{
+				"id": "c109005e-a48b-4895-bd4c-fd29a2b5eecd",
+				"method": "DELETE"
+			}
+		]
+	}
+}

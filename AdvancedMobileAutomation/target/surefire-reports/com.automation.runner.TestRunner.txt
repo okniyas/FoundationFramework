@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 390.8 s <<< FAILURE! -- in com.automation.runner.TestRunner
+Validate filter functionality.Verify user can filter successfully #3 -- Time elapsed: 60.62 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [e9e62004-df3f-4655-9bc3-c2a403c6fbc4, findElement {using=xpath, value=//android.widget.TextView[@text='GENDER']}]
+Capabilities {appium:app: C:\Users\280662\Downloads\m..., appium:appActivity: com.myntra.android.activiti..., appium:appPackage: com.myntra.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\280662\Downloads\m..., appActivity: com.myntra.android.activiti..., appPackage: com.myntra.android, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: RZCRA0C03NV, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A528B, appium:deviceName: RZCRA0C03NV, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: RZCRA0C03NV, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.8125, appium:platformVersion: 14, appium:statBarHeight: 87, appium:takesScreenshot: true, appium:viewportRect: {height: 2313, left: 0, top: 87, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e9e62004-df3f-4655-9bc3-c2a403c6fbc4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.automation.pages.ProductListingPage.clickOnGenderOption(ProductListingPage.java:74)
+	at com.automation.steps.ProductListingSteps.clickOnTheGenderOption(ProductListingSteps.java:31)
+	at ✽.click on the gender option(file:///C:/UST_Java/AdvancedMobileAutomation/src/test/resources/features/ProductFilter.feature:8)
+
+Validate product search functionality.Verify product listing page shows the searched item only -- Time elapsed: 43.04 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.listOfItemsByScroll" is null
+	at com.automation.pages.ProductListingPage.verifyProductListingIsDisplayedItemsUsingScroll(ProductListingPage.java:64)
+	at com.automation.steps.ProductListingSteps.verifyProductPageIsDisplayedItemUsingScroll(ProductListingSteps.java:26)
+	at ✽.verify product listing page is displayed item using scroll(file:///C:/UST_Java/AdvancedMobileAutomation/src/test/resources/features/ProductSearch.feature:16)
+

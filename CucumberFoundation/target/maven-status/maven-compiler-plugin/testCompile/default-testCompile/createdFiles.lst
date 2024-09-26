@@ -1,0 +1,10 @@
+com\automation\utils\ReportManager.class
+com\automation\pages\HomePage.class
+com\automation\runner\TestRunner.class
+com\automation\steps\ProductListSteps.class
+com\automation\utils\DriverManager.class
+com\automation\pages\BasePage.class
+com\automation\steps\HomeSteps.class
+com\automation\utils\ConfigReader.class
+com\automation\steps\Hooks.class
+com\automation\pages\ProductListPage.class
